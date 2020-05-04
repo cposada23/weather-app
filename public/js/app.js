@@ -1,7 +1,7 @@
 console.log('works')
 
 function getWeather (location) {
-  return fetch('http://localhost:4000/weather?address=' + encodeURI(location))
+  return fetch('/weather?address=' + encodeURI(location))
 }
 
 const weatherForm = document.querySelector('#weather-form')
